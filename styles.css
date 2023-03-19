@@ -9,3 +9,15 @@ body {
 span {
     color: black;
 }
+
+.header {
+    display: grid;
+    grid-template-columns: 20% 20%;
+    column-width: 160px;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+}
