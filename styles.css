@@ -36,3 +36,9 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
+
+.mysterycard {
+    border-radius: 100%;
+    background-color: white;
+    padding: 10px;
+}
