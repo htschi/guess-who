@@ -31,10 +31,13 @@ The array will contain 20 elements, each element in the array will be an object,
   image: 'characters_01.jpg'
 }
 Make sure you have all 20 characters in the array.
+
 Random Function
 Create a selectRandomCard function that returns a RANDOM integer number (without decimals) between 0 and 19, such as 0, 5 or 16.
 Then, use number to select the corresponding card by index from the array of cards.
-Within the function, target the HTML element with the mystery-img class (this should be the img tag of the Mystery Card) and set its source attribute to the image value of the randomly selected card. You will need to compose the full path to the image to include images/, such as images/charachters_01.jpg and not just 'characters_01.jpg'.
+Within the function, target the HTML element with the mystery-img class (this should be the img tag of the Mystery Card) and 
+set its source attribute to the image value of the randomly selected card. 
+You will need to compose the full path to the image to include images/, such as images/charachters_01.jpg and not just 'characters_01.jpg'.
 Do the same with the mystery-name span tag and replace its content with the name value of the randomly selected card.
 Finally call the function in your JS file and test in the browser that every time you refresh the page a new random Mystery Card is selected.
 Congratulations! Your "Guess Who?" game is complete. You can now play with your friends.
