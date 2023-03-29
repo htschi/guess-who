@@ -47,18 +47,29 @@ It's super exciting, but don't forget to commit and push.
 Advanced
 If you managed to get this far, try the following.
 
-We're now going to replace any hardcoded content in the HTML and inject data directly from JS. By doing this, we're making our game more flexible, the data (name of the characters, images and number of characters) could come from a different source (like an API) and we could produce different versions of the game without having to change or duplicate our code.
+We're now going to replace any hardcoded content in the HTML and inject data directly from JS.
+By doing this, we're making our game more flexible, the data (name of the characters, images and number of characters) could come from a different source (like an API) 
+and we could produce different versions of the game without having to change or duplicate our code.
 
 Remove all cards from the HTML, keeping only the empty wrapper <div class="cards"><div>
 In your JS, create a function populateCards that:
 a. targets the .cards element
-b. loops through the array of cards and for each cards injects the HTML corresponding to 1 card into the .cards element, replacing the image and name values.
+b. loops through the array of cards and for each cards injects the HTML corresponding to 1 card into the .cards element, 
+replacing the image and name values.
 The HTML to inject 20 times is the following:
 
 <div class="card">
   <img src="images/characters_01.jpg" />
   <span>Sakura</span>
 </div>
+
+
+<div class="card" onclick="toggleEliminated(this)">
+                    <img src="images/characters_05.jpg" />
+                    <span>Mikoto</span>
+                </div>
+
+                
 however, you need to replace the srouce of the image and the name of the character using the array, the loop and the index.
 
 Test in the browser that if you change the name or image of any of the characters in the array of cards, these will appear on the page.
